@@ -1,0 +1,165 @@
+$background-color: #3486FF;
+$maincolor: #fa699a;
+$layercolor: #f9b8d9;
+$linearcolor: linear-gradient(to left, #3486FF, #d51756);
+
+body{
+    background-color: $background-color;
+    margin: 0;
+    padding: 0;
+
+    
+}
+
+
+// styling the main todo wrapper/section 
+
+.to-do-wrapper{
+    // outline: 2px solid red;
+    width: 700px;
+    height: 600px;
+    max-width: 750px;
+    margin: 4rem auto;
+    background-color: $layercolor;
+
+            input{
+                appearance: none;
+                outline: none;
+                border: none;
+                background: none;
+            }
+
+            .title{
+                // outline: 2px solid green;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                align-items:baseline;
+
+                        h2{
+                            color: #fff;
+                            background-image: $linearcolor;
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                            font-size: 30px;
+                            font-family: jokerman;
+                        
+                        }
+            
+                        #date-now{
+                            color: #fff;
+                            font-size: 20px;
+                            font-family: jokerman;
+                            text-shadow: 1px 1px 1px $background-color;
+                            line-height: 1.2rem;
+                        }
+                        #time-now{
+                            color: #fff;
+                            font-size: 20px;
+                            font-family: jokerman;
+                            text-shadow: 1px 1px 1px $background-color;
+                            line-height: 1.2rem;
+                        }
+            }
+
+
+            .to-do-wrap{
+                // outline: 2px solid orangered;
+                padding: 10px;
+                       form{
+                        display: flex;
+                        flex-direction: row;
+                            #input-task{
+                                flex: 1 1 0%;
+                                padding: 1rem;
+                                background-color: #ffebf5;
+                                border-radius: 20px;
+                                margin-right: 50px;
+                            }
+                            #input-task:focus{
+                                background-color: #ffebf5;
+                            }
+                            #add-task-btn{
+                                outline: none;
+                                background: none;
+                                appearance: none;
+                                border: none;
+
+                                    .bx{
+                                        font-size: 30px;
+                                        color: white;
+                                        background-color: $background-color;
+                                    }
+
+                            }
+
+                       }
+                       
+            }
+
+            .task-wrapper{
+                padding: 1rem;
+                width: 600px;
+                margin: 20px 20px 0 20px;
+                // outline: 2px solid black;
+                background-color: #ffebf5;
+                max-height: 350px;
+                overflow-y: auto;
+                    
+                    
+                    .content-wrap{
+                        display: flex;
+                        align-items: baseline;
+                        justify-content: space-between;
+                        background-color: #ffe0f0;
+                        padding: 0.7rem;
+                        color: white;
+                        border-radius:10px;
+                        margin-bottom: 30px;
+                    }       
+                    #added-task{
+                        outline: none;
+                        appearance: none;
+                        width: 200%;
+                        // flex:1 1 0;
+                        font-size: 1.130rem;
+                        display: block;
+                        // outline: 2px solid red;
+                        color: $background-color;
+                        font-family: calibri;
+                        font-weight: bold;
+                    }
+
+                    #added-task:not(:read-only){
+                        color: black;
+                    }
+
+                   
+                    
+
+                    .commands{
+                        display: flex;
+                        .edit-btn{
+                            outline: none;
+                            appearance: none;
+                            background: none;
+                            border: none;
+                            background-image: $linearcolor;
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                            cursor: pointer;
+                        }
+                        .delete-btn{
+                            outline: none;
+                            appearance: none;
+                            background: none;
+                            border: none;
+                            background-image: $linearcolor;
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                            cursor: pointer;
+                        }
+                    }
+            }
+            
+}

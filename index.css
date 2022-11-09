@@ -1,0 +1,131 @@
+body {
+  background-color: #3486FF;
+  margin: 0;
+  padding: 0;
+}
+
+.to-do-wrapper {
+  width: 700px;
+  height: 600px;
+  max-width: 750px;
+  margin: 4rem auto;
+  background-color: #f9b8d9;
+}
+.to-do-wrapper input {
+  appearance: none;
+  outline: none;
+  border: none;
+  background: none;
+}
+.to-do-wrapper .title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: baseline;
+}
+.to-do-wrapper .title h2 {
+  color: #fff;
+  background-image: linear-gradient(to left, #3486FF, #d51756);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 30px;
+  font-family: jokerman;
+}
+.to-do-wrapper .title #date-now {
+  color: #fff;
+  font-size: 20px;
+  font-family: jokerman;
+  text-shadow: 1px 1px 1px #3486FF;
+  line-height: 1.2rem;
+}
+.to-do-wrapper .title #time-now {
+  color: #fff;
+  font-size: 20px;
+  font-family: jokerman;
+  text-shadow: 1px 1px 1px #3486FF;
+  line-height: 1.2rem;
+}
+.to-do-wrapper .to-do-wrap {
+  padding: 10px;
+}
+.to-do-wrapper .to-do-wrap form {
+  display: flex;
+  flex-direction: row;
+}
+.to-do-wrapper .to-do-wrap form #input-task {
+  flex: 1 1 0%;
+  padding: 1rem;
+  background-color: #ffebf5;
+  border-radius: 20px;
+  margin-right: 50px;
+}
+.to-do-wrapper .to-do-wrap form #input-task:focus {
+  background-color: #ffebf5;
+}
+.to-do-wrapper .to-do-wrap form #add-task-btn {
+  outline: none;
+  background: none;
+  appearance: none;
+  border: none;
+}
+.to-do-wrapper .to-do-wrap form #add-task-btn .bx {
+  font-size: 30px;
+  color: white;
+  background-color: #3486FF;
+}
+.to-do-wrapper .task-wrapper {
+  padding: 1rem;
+  width: 600px;
+  margin: 20px 20px 0 20px;
+  background-color: #ffebf5;
+  max-height: 350px;
+  overflow-y: auto;
+}
+.to-do-wrapper .task-wrapper .content-wrap {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  background-color: #ffe0f0;
+  padding: 0.7rem;
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+.to-do-wrapper .task-wrapper #added-task {
+  outline: none;
+  appearance: none;
+  width: 200%;
+  font-size: 1.13rem;
+  display: block;
+  color: #3486FF;
+  font-family: calibri;
+  font-weight: bold;
+}
+.to-do-wrapper .task-wrapper #added-task:not(:read-only) {
+  color: black;
+}
+.to-do-wrapper .task-wrapper .commands {
+  display: flex;
+}
+.to-do-wrapper .task-wrapper .commands .edit-btn {
+  outline: none;
+  appearance: none;
+  background: none;
+  border: none;
+  background-image: linear-gradient(to left, #3486FF, #d51756);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+}
+.to-do-wrapper .task-wrapper .commands .delete-btn {
+  outline: none;
+  appearance: none;
+  background: none;
+  border: none;
+  background-image: linear-gradient(to left, #3486FF, #d51756);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=index.css.map */
